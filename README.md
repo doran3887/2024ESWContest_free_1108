@@ -206,7 +206,7 @@ python control.py
 
 <br><br>
 
-**2.Obj Imagw**
+**2.Obj Image**
 
 <br>
 
