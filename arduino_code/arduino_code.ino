@@ -2,6 +2,7 @@
 #include <MightyZap.h>
 
 #define ID_NUM 1
+#define POSITION1 0
 #define SPEED 1023
 IRROBOT_EZController Easy(&Serial1);
 
@@ -21,9 +22,7 @@ void loop() {
   {
     String data = Serial.readStringUntil('\n');
     int position = data.toInt();
-    
-    positions[currentIndex] = position;
-    
+        
     // 위치 이동
     Easy.MightyZap.GoalPosition(ID_NUM, position);
     Easy.MightyZap.GoalSpeed(ID_NUM, SPEED);
