@@ -63,6 +63,9 @@ git clone https://github.com/doran3887/ASAP-Accelerator_Stop_Assistance_Program-
 ### Clone traking repo 'Sort'
 - **Repository**: [YOLO v10 on GitHub](https://github.com/THU-MIG/yolov10)
 
+```bash
+git clone https://github.com/abewley/sort.git
+```
 
 **To use Sort tracker** 
  1. Download the [2D MOT 2015 benchmark dataset](https://motchallenge.net/data/MOT15/)
@@ -115,6 +118,20 @@ conda activate [env_name]
 **You can get this design in foder 'hardware design'**
 
 <br>
+
+---
+
+<br>
+
+## Configuration
+
+```bash
+GPS.apk.zip
+control.py
+--YOLO.py
+--
+
+```
 
 ---
 
