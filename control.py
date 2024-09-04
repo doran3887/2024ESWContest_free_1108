@@ -7,7 +7,7 @@ import pygame
 import obd
 from pynput import keyboard
 from pathlib import Path
-from new_YOLO_new import TrackInfo, draw_roi, roi_sort, detect, initialize_video_capture
+from YOLO import TrackInfo, draw_roi, roi_sort, detect, initialize_video_capture
 from sort import Sort  
 from ultralytics import YOLOv10
 from GPS_func import load_data, track_speed_limit
