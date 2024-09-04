@@ -2,11 +2,16 @@
 ===========================================
 
 <br>
-<br>
 
 ## Introdution
 
-**This repo is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.**  <img src = "https://img.icons8.com/?size=40&id=VF7zRdVii0QF&format=png&color=000000">
+**This project is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.**  <img src = "https://img.icons8.com/?size=40&id=VF7zRdVii0QF&format=png&color=000000">
+
+**In recent years, sudden acceleration accidents have occurred frequently and have become quite an issue. A sudden acceleration accident is an accident caused by a mechanical defect in a vehicle. However, to get to the bottom of most sudden acceleration accidents, it was found that it was not a sudden acceleration accident caused by a mechanical defect, but an acceleration pedal misconception caused by the driver's poor driving. Although the situation has to stop due to the confusion between the acceleration pedal and the brake, accidents often occur by continuing to misstep the acceleration pedal. Therefore, a device has been created to distinguish whether it is a sudden acceleration accident such as a foot cam or a misoperation accident, and in order to prevent such accidents, a technology to prevent misoperation of the acceleration pedal is emerging by using various sensors attached to the vehicle.**
+
+**In this society, the project aimed to design an "accelerated pedal malfunction prevention device" (ASAP) that can be installed in almost any vehicle. The currently developed "accelerated pedal malfunction prevention device" cannot be attached to aging vehicles or vehicles that do not fit into developed devices because multiple sensors must be attached to the vehicle and it is designed for a specific vehicle. Because the "accelerated pedal malfunction case" is a "misoperation case," it is especially common for older people with relatively poor cognitive abilities. Owners owned by older people are also likely to be aged, so they will not be able to benefit from the technology even if new technology is introduced.**
+
+**'ASAP', which is to be developed in this project, is a simple form consisting of a single camera and two linear motors that do not require a special sensor and can be mounted on almost any vehicle. With the speed of driving, the speed limit of the current GPS value-based road, and vision data obtained through the camera, accidents that can be caused by incorrect manipulation of the accelerator pedal are prevented in advance.**
 
 <br>
 
