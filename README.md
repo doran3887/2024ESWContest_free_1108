@@ -126,10 +126,16 @@ conda activate [env_name]
 ## Configuration
 
 ```bash
+README.md
+environment.yaml
 GPS.apk.zip
 control.py
 --YOLO.py
---
+--best.pt
+--GPS_func.py
+----gps.csv
+--accel_warning.wav
+--test1.mp4
 
 ```
 
