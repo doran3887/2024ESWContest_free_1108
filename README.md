@@ -100,7 +100,7 @@ conda activate [env_name]
 1. OBD2 - any OBD2 that uses OBD lib(python)
 2. [Linear motor(MIGHTY ZAP)](https://smartstore.naver.com/irrobot/products/4937561648)
 3. Add [lib](https://drive.google.com/file/d/1gnpz7gdhOqTuFVuHxabJKpLKsAKc_nWO/view) to your [Arduino IDE](https://www.arduino.cc/en/software)
-4. Install 
+4. Install GPS.apk in your mobile phone
 **Our HardWare Desgin**
 
 <br>
@@ -123,6 +123,14 @@ conda activate [env_name]
 ### Demo - video(test1.mp4)
 
 **You need to check port(Serial), URL(GPS.apk app) before launch**
+
+<br>
+
+**Your laptop or desktop should be connected to the same network as your mobile phone with the GPS app installed**
+
+<br>
+
+**You can get URL when you launch GPS.apk**
 
 <br>
 
