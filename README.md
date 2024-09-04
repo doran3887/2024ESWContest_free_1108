@@ -8,6 +8,13 @@
 
 <br>
 
+![Python](https://img.shields.io/badge/Language-Python-blue?logo=python)
+![C++](https://img.shields.io/badge/Language-C++-informational?logo=c%2B%2B)
+![Kotlin](https://img.shields.io/badge/Language-Kotlin-orange?logo=kotlin)
+
+
+<br>
+
 ---
 ## Repo We used
 
