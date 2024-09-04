@@ -105,7 +105,34 @@ conda activate [env_name]
 
 <br>
 
-## demo
+<img src="https://github.com/user-attachments/assets/2c22d3f0-f56a-42b4-bfc0-a7b036db3d70" width="400">
+
+<img src="https://github.com/user-attachments/assets/307cecb1-7a6f-45a7-ac4f-ddaa7d1c9c73" width="400">
+
+
+<br><br>
+
+**You can get this design in foder 'hardware design'**
+
+<br>
+
+## Launch
+
+<br>
+
+### Demo - video
+
+<br>
+
+```bash
+conda activate [env_name]
+cd [to\your\clone\path]
+python final_final_control.py
+```
+
+<br>
+
+
 
 
 <br>
