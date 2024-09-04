@@ -100,7 +100,7 @@ conda activate [env_name]
 1. OBD2 - any OBD2 that uses OBD lib(python)
 2. [Linear motor(MIGHTY ZAP)](https://smartstore.naver.com/irrobot/products/4937561648)
 3. Add [lib](https://drive.google.com/file/d/1gnpz7gdhOqTuFVuHxabJKpLKsAKc_nWO/view) to your [Arduino IDE](https://www.arduino.cc/en/software)
-
+4. Install 
 **Our HardWare Desgin**
 
 <br>
@@ -120,7 +120,9 @@ conda activate [env_name]
 
 <br>
 
-### Demo - video
+### Demo - video(test1.mp4)
+
+**You need to check port(Serial), URL(GPS.apk app) before launch**
 
 <br>
 
@@ -132,27 +134,48 @@ python final_final_control.py
 
 <br>
 
-**Obj Imagw**
-https://github.com/user-attachments/assets/1727dafe-2723-4974-ae4b-93eff640c0cf
+**1.Set ROI**
 
-**True Image**
+<br>
+
+<img src = "https://github.com/user-attachments/assets/ef91ce05-6222-4fa3-a49b-b500ca718bbc" width="640">
+<br>
+
+**2.Obj Imagw**
+
+<br>
+
+<video src="https://github.com/user-attachments/assets/f4925c19-2b0e-4787-82e0-bed0aad6adc8" width="640" height="360" controls>
+  Your browser does not support the video tag.
+</video>
+
+<br>
+
+**3.True Image**
+
+<video src="https://github.com/user-attachments/assets/168b21e0-25ea-487a-820b-792882d8ac2a" width="640" height="360" controls>
+  Your browser does not support the video tag.
+</video>
+
+<br>
+
+## args
+```bash
+python final_final_control.py --video_path another_video.mp4 --server_url http://example.com --com_port COM3
+```
+
+<br>
+
+**video_path : video path or webcam(0)**
+
+<br>
 
 
 
 <br>
 
-1. Install 
 
 
-
-
-## apk
-
-apk의 역할
-
-apk 스마트폰에 설치
-
-apk 사용법
 
 
 # CopyRight of DataSet for GPS Location and YOLO training
