@@ -42,7 +42,47 @@ Sort (Simple Online and Realtime Tracking) is a simple yet effective algorithm f
 
 
 
-## installation(yolov10 depth estimation)
+
+
+## Setup Env
+
+### Clone repo
+```bash
+mkdir [your ws name]
+cd [your ws name]
+git clone https://github.com/doran3887/ASAP-Accelerator_Stop_Assistance_Program-.git
+```
+
+### Clone traking repo 'Sort'
+- **Repository**: [YOLO v10 on GitHub](https://github.com/THU-MIG/yolov10)
+
+
+**To use Sort tracker** 
+ 1. Download the [2D MOT 2015 benchmark dataset](https://motchallenge.net/data/MOT15/)
+ 2. Create a symbolic link to the dataset - Run Command Prompt as Administrator
+    ```bash
+    mklink /D [symbolic_link_path] [dataset_path]
+    
+ex)
+```bash
+mklink /D "C:\Users\kyle\Desktop\project_1\dataset_link" "C:\Users\kyle\Datasets\my_dataset"
+```
+
+**When the command executes successfully, you will see a message like this:**
+```bash
+symbolic link created for C:\Users\kyle\Desktop\project_1\dataset_link <<===>> C:\Users\kyle\Datasets\my_dataset
+```
+
+
+### Set virtual env - Conda
+```bash
+conda env export > environment.yaml
+conda env create -f environment.yaml -n [env_name]
+conda activate [env_name]
+```
+
+
+
 
 mkdir ~/
 
