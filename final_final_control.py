@@ -98,7 +98,7 @@ def main(video_path):
     device = torch.device('cuda')
 
     # 욜로 모델 로드
-    model_yolo = YOLOv10('YOLOv10_model/best.pt')
+    model_yolo = YOLOv10('best.pt')
     model_yolo.to(device)
 
     # Metric_3D 모델 로드
