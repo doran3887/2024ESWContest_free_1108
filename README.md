@@ -116,23 +116,28 @@ conda activate [env_name]
 
 <br>
 
-## Launch
+---
 
 <br>
+
+## Launch
+
 
 ### Demo - video(test1.mp4)
 
-**You need to check port(Serial), URL(GPS.apk app) before launch**
+![icons8-check-48](https://github.com/user-attachments/assets/abd20a99-c74a-4c44-9998-ef5111c85fba) **Check list**
 
-<br>
+ 
+![icons8-1-24](https://github.com/user-attachments/assets/d4387ef8-bade-4ee8-bb4b-df0b7a7f7bfa) You need to check port(Serial), URL(GPS.apk app) before launch
 
-**Your laptop or desktop should be connected to the same network as your mobile phone with the GPS app installed**
 
-<br>
+![icons8-2-24](https://github.com/user-attachments/assets/3c1e64e4-22fd-4fa5-a76a-c57b1412f61c) Your laptop or desktop should be connected to the same network as your mobile phone with the GPS app installed
 
-**You can get URL when you launch GPS.apk**
 
-<br>
+
+![icons8-3-24](https://github.com/user-attachments/assets/75f44465-dce2-47f1-8ed2-f782427568fc) You can get URL when you launch GPS.apk
+
+
 
 ```bash
 conda activate [env_name]
@@ -167,7 +172,33 @@ python final_final_control.py
 
 <br>
 
-## args
+**If you don't have OBD2, you can speed up using keyboard**
+
+<img src="https://github.com/user-attachments/assets/fc0c124c-3e33-4d43-939d-b11b87bf796b" width="40" height="40">
+  speed up 1
+
+<img src="https://github.com/user-attachments/assets/e3e0d6e1-7803-4b54-a39e-3f7c16433404" width="40" height="40">
+  speed down 1
+
+<br>
+
+**If you have OBD2 change code in final_final_cotrol**
+1. Tinize line 139 and 140
+2. Add below code in main function before while loop
+```python
+connection = initialize_obd_connection
+
+```
+3. Add below code in line 159
+```python
+curren_velocity = get_velocity(connection)
+```
+
+---
+
+<br>
+
+## Args
 ```bash
 python final_final_control.py --video_path another_video.mp4 --server_url http://example.com --com_port COM3
 ```
