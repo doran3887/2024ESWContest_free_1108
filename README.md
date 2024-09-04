@@ -1,6 +1,10 @@
 # ASAP-Accelerator_Stop_Assistance_Program
 
-이 레포지토리는 yolo 몇 쓰고 그리고 이거저개해서 궁극적으로 뭐하려고 했다 결과는 어느정도의 지표가 나왓다
+This repo is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.
+
+"YOLO v10" for object recognition while driving [Github] [https://github.com/THU-MIG/yolov10]
+'Metric 3D' for depth estimation [Github] [https://github.com/YvanYin/Metric3D]
+'Sort' for object tracking  [Github] [https://github.com/abewley/sort?tab=readme-ov-file]
 
 ## installation(yolov10 depth estimation)
 
