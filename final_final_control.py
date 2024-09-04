@@ -97,8 +97,7 @@ def main(video_path):
     start_time = time.time()
     device = torch.device('cuda')
 
-    # 욜로 모델 로드 - 다 하고 half() 되는지도 확인하기
-    #model_yolo = YOLOv10.from_pretrained('jameslahm/yolov10n')
+    # 욜로 모델 로드
     model_yolo = YOLOv10('YOLOv10_model/best.pt')
     model_yolo.to(device)
 
