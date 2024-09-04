@@ -1,5 +1,3 @@
-# current_status 장애물 TF, obstacle_score 장애물 점수, depth_score  
-
 import argparse
 import datetime
 import time
@@ -287,7 +285,7 @@ def clip_coords(boxes, img_shape):
     boxes[:, 3] = np.clip(boxes[:, 3], 0, img_shape[0])  # y2 좌표를 0에서 이미지 높이로 제한
 
 def initialize_video_capture(video_input):
-    if video_input == 0:
+    if video_input == '0':
         video_input = int(video_input)
         cap = cv2.VideoCapture(video_input)
     else:
