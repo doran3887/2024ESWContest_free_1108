@@ -2,7 +2,7 @@
 
 This repo is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.
 
-"YOLO v10" for object recognition while driving [Github] [https://github.com/THU-MIG/yolov10]
+"YOLO v10" for object recognition while driving [here] (https://github.com/THU-MIG/yolov10)
 'Metric 3D' for depth estimation [Github] [https://github.com/YvanYin/Metric3D]
 'Sort' for object tracking  [Github] [https://github.com/abewley/sort?tab=readme-ov-file]
 
