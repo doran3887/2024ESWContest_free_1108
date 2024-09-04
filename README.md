@@ -8,9 +8,21 @@
 
 <br>
 
+## Languages
 ![Python](https://img.shields.io/badge/Language-Python-blue?logo=python)
 ![C++](https://img.shields.io/badge/Language-C++-informational?logo=c%2B%2B)
 ![Kotlin](https://img.shields.io/badge/Language-Kotlin-orange?logo=kotlin)
+
+## Tools
+![Arduino IDE](https://img.shields.io/badge/Tool-Arduino%20IDE-00979D?logo=arduino)
+![Fusion 360](https://img.shields.io/badge/Tool-Fusion%20360-DD5232?logo=autodesk)
+![VSCode](https://img.shields.io/badge/Tool-VSCode-007ACC?logo=visual-studio-code)
+![Android Studio](https://img.shields.io/badge/Tool-Android%20Studio-3DDC84?logo=android-studio)
+
+## Environment
+![Windows 10](https://img.shields.io/badge/Environment-Windows%2010-0078D6?logo=windows)
+![Anaconda](https://img.shields.io/badge/Environment-Anaconda-44A833?logo=anaconda)
+
 
 
 <br>
