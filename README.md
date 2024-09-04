@@ -2,7 +2,7 @@
 
 This repo is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.
 
-**굵게** YOLO v10: Object Recognition for Driving
+**YOLO v10: Object Recognition for Driving** 
 
 YOLO v10 is the latest model for object recognition while driving, offering exceptional performance in real-time scenarios.
 
@@ -14,7 +14,7 @@ YOLO v10 is the latest model for object recognition while driving, offering exce
 
 ---
 
-**굵게** Metric 3D: Depth Estimation
+**Metric 3D: Depth Estimation**
 
 Metric 3D provides advanced depth estimation capabilities, essential for understanding the positioning of objects in 3D space.
 
@@ -26,7 +26,7 @@ Metric 3D provides advanced depth estimation capabilities, essential for underst
 
 ---
 
-**굵게** Sort: Object Tracking
+**Sort: Object Tracking**
 
 Sort (Simple Online and Realtime Tracking) is a simple yet effective algorithm for object tracking, providing lightweight tracking functionality.
 
