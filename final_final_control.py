@@ -11,7 +11,7 @@ from new_YOLO_new import TrackInfo, draw_roi, roi_sort, detect, initialize_video
 from sort import Sort  
 from ultralytics import YOLOv10
 from GPS_func import load_data, track_speed_limit
-
+import argparse  # Import argparse for command-line argument parsing
 
 # ROI 전역변수
 points = []
@@ -19,6 +19,7 @@ roi_defined = False
 curren_velocity = 0
 music_flag = False
 MUSIC_END_EVENT = pygame.USEREVENT + 1
+
 def initialize_obd_connection():
     try:
         connection = obd.OBD()  # 자동으로 포트 탐색하여 연결 시도
@@ -89,7 +90,7 @@ def play_warning_sound(warning_sound_path):
     music_flag = True
     print(music_flag)    
 
-def main(video_path):
+def main(video_path, server_url, com_port):
     pygame.init()
     pygame.mixer.init()
     global curren_velocity
@@ -97,8 +98,8 @@ def main(video_path):
     start_time = time.time()
     device = torch.device('cuda')
 
-    # 욜로 모델 로드
-    model_yolo = YOLOv10('best.pt')
+    # 욜로 모델 로드 - 다 하고 half() 되는지도 확인하기
+    model_yolo = YOLOv10('YOLOv10_model/best.pt')
     model_yolo.to(device)
 
     # Metric_3D 모델 로드
@@ -115,17 +116,15 @@ def main(video_path):
 
     # 비디오 캡처 객체 생성 1번쨰가 비디오 ,2번째가 웹캠
     cap = initialize_video_capture(video_path)
-    #cap = cv2.VideoCapture(0)
     frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = int(cap.get(cv2.CAP_PROP_FPS))
     
     ret, first_frame = cap.read()
-    ser = serial.Serial(port = 'COM11', baudrate= 9600)  # COM 포트를 윈도우 환경에 맞게 설정
+    ser = serial.Serial(port=com_port, baudrate=9600)  # COM 포트를 인수로 받음
     results = []
     
     data = load_data('gps.csv')
-    server_url = 'http://192.0.0.4:8080/'
 
     # 프레임 스킵을 위한 프레임 카운트
     frame_count = 0
@@ -160,8 +159,6 @@ def main(video_path):
             
             speed_limit = track_speed_limit(server_url, data)
              
-            #current_velocity = get_velocity()
-
             speed_diff = curren_velocity - speed_limit
 
             if is_obstacle or speed_diff > 0:
@@ -202,7 +199,6 @@ def main(video_path):
         else :
             continue
 
-
         # 창 띄우기
         cv2.imshow('obj_img', obj_img)
         cv2.imshow('true_img', true_img)  # True 상태 객체만 표시하는 창
@@ -216,5 +212,13 @@ def main(video_path):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    video_path = 'test1.mp4'  
-    main(video_path)
+    # Argparse to receive command line arguments with default values
+    parser = argparse.ArgumentParser(description="Run the video analysis script with specified parameters.")
+    parser.add_argument('--video_path', type=str, default='test1.mp4', help="Path to the video file (default: test1.mp4)")
+    parser.add_argument('--server_url', type=str, default='http://192.0.0.2:8080/', help="URL of the server (default: http://192.0.0.4:8080/)")
+    parser.add_argument('--com_port', type=str, default='COM11', help="COM port for serial communication (default: COM11)")
+
+    args = parser.parse_args()
+
+    # Run the main function with the arguments received
+    main(args.video_path, args.server_url, args.com_port)
