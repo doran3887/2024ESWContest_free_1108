@@ -2,9 +2,43 @@
 
 This repo is a driving assistance program to prevent incorrect operation of Excel when driving a vehicle.
 
-"YOLO v10" for object recognition while driving [here] (https://github.com/THU-MIG/yolov10)
-'Metric 3D' for depth estimation [Github] [https://github.com/YvanYin/Metric3D]
-'Sort' for object tracking  [Github] [https://github.com/abewley/sort?tab=readme-ov-file]
+# YOLO v10: Object Recognition for Driving
+
+YOLO v10 is the latest model for object recognition while driving, offering exceptional performance in real-time scenarios.
+
+- **🔗 Repository**: [YOLO v10 on GitHub](https://github.com/THU-MIG/yolov10)
+- **🚀 Features**:
+  - High-speed object recognition performance
+  - Optimized for real-time response
+  - High detection rates in various environments
+
+---
+
+# Metric 3D: Depth Estimation
+
+Metric 3D provides advanced depth estimation capabilities, essential for understanding the positioning of objects in 3D space.
+
+- **🔗 Repository**: [Metric 3D on GitHub](https://github.com/YvanYin/Metric3D)
+- **🚀 Features**:
+  - Accurate depth estimation
+  - Optimized for 3D spatial recognition
+  - Applicable across various use cases
+
+---
+
+# Sort: Object Tracking
+
+Sort (Simple Online and Realtime Tracking) is a simple yet effective algorithm for object tracking, providing lightweight tracking functionality.
+
+- **🔗 Repository**: [Sort on GitHub](https://github.com/abewley/sort?tab=readme-ov-file)
+- **🚀 Features**:
+  - Simple and fast tracking algorithm
+  - Optimized for real-time object tracking
+  - Lightweight performance suitable for various devices
+
+---
+
+
 
 ## installation(yolov10 depth estimation)
 
