@@ -1,0 +1,18 @@
+train: 'C:\Users\admin\Desktop\final_dataset\dataset\train\images'
+val: 'C:\Users\admin\Desktop\final_dataset\dataset\valid\images'
+
+nc: 11
+
+names: [
+    'building',
+    'wall',
+    'fence',
+    'pole',
+    'person',
+    'rider',
+    'car',
+    'truck',
+    'bus',
+    'motorcycle',
+    'bicycle'
+]
