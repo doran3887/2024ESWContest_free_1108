@@ -142,7 +142,7 @@ conda activate [env_name]
 ```bash
 conda activate [env_name]
 cd [to\your\clone\path]
-python final_final_control.py
+python control.py
 ```
 
 <br>
@@ -182,7 +182,7 @@ python final_final_control.py
 
 <br>
 
-### If you have OBD2 change code in final_final_cotrol
+### If you have OBD2 change code in cotrol.py
 1. Tinize line 139 and 140
 2. Add below code in main function before while loop
 ```python
@@ -200,7 +200,7 @@ curren_velocity = get_velocity(connection)
 
 ## Args
 ```bash
-python final_final_control.py --video_path another_video.mp4 --server_url http://example.com --com_port COM3
+python control.py --video_path another_video.mp4 --server_url http://example.com --com_port COM3
 ```
 
 <br>
