@@ -101,11 +101,12 @@ conda activate [env_name]
 2. [Linear motor(MIGHTY ZAP)](https://smartstore.naver.com/irrobot/products/4937561648)
 3. Add [lib](https://drive.google.com/file/d/1gnpz7gdhOqTuFVuHxabJKpLKsAKc_nWO/view) to your [Arduino IDE](https://www.arduino.cc/en/software)
 
+**Our HardWare Desgin**
+
 <br>
 
 ## demo
 
-**Before run, you should prepare hardware and follo the text below**
 
 <br>
 
