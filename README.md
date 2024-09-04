@@ -126,7 +126,7 @@ conda activate [env_name]
 ## Configuration
 
 ```bash
-README.md
+|__README.md
 |__environment.yaml
 |__GPS.apk.zip
 |__control.py
