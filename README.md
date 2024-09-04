@@ -172,7 +172,7 @@ python final_final_control.py
 
 <br>
 
-**If you don't have OBD2, you can speed up using keyboard**
+### If you don't have OBD2, you can speed up using keyboard
 
 <img src="https://github.com/user-attachments/assets/fc0c124c-3e33-4d43-939d-b11b87bf796b" width="40" height="40">
   speed up 1
@@ -182,7 +182,7 @@ python final_final_control.py
 
 <br>
 
-**If you have OBD2 change code in final_final_cotrol**
+### If you have OBD2 change code in final_final_cotrol
 1. Tinize line 139 and 140
 2. Add below code in main function before while loop
 ```python
