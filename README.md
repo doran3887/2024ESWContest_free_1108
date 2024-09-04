@@ -203,7 +203,8 @@ python control.py
 <br>
 
 <img src = "https://github.com/user-attachments/assets/ef91ce05-6222-4fa3-a49b-b500ca718bbc" width="640">
-<br>
+
+<br><br>
 
 **2.Obj Imagw**
 
